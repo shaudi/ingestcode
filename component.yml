@@ -1,11 +1,11 @@
 iam_requirements:
-  - resources: [ "arn:aws:s3:::cortico-data/reddit/*" ]
+  - resources: [ "arn:aws:s3:::blah/*" ]
     actions: [ "s3:PutObject", "s3:GetObject" ]
-  - resources: [ "arn:aws:s3:::cortico-ml-models/reddit/*" ]
+  - resources: [ "arn:aws:s3:::blah*" ]
     actions: [ "s3:PutObject", "s3:GetObject" ]
 db_requirements:
   ops:
-    required_migration: 20170905-1047-update-auth-library
+    required_migration: blah
     grants:
       - select, update on table auth_library
       - all on sequence auth_library_id_seq
